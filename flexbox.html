@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Layout Demo</title>
+    <link rel="stylesheet" href="flex.css">
+    <style>
+      body { font-family: sans-serif; margin: 40px; }
+      nav {
+        margin-bottom: 32px;
+        background: #ececec;
+        padding: 10px 16px;
+        border-radius: 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #2b2b2b;
+        margin-right: 20px;
+        font-weight: 500;
+        padding: 6px 14px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+      nav a.active,
+      nav a:hover {
+        background: #388e3c;
+        color: #fff;
+      }
+      h1 { margin-bottom: 24px; }
+      .note {
+        background: #e0ffe2;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 24px;
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="float.html">Float</a>
+        <a href="flexbox.html" class="active">Flexbox</a>
+        <a href="grid.html">Grid</a>
+    </nav>
+    <h1>CSS Layout Demo</h1>
+    <div class="note">
+      <strong>Currently using: <span style="color:#388e3c;">Flexbox</span> layout</strong><br>
+      <em>View how the same HTML changes with different CSS layout techniques.</em>
+    </div>
+    <div class="container">
+        <div class="item item1">Box 1</div>
+        <div class="item item2">Box 2</div>
+        <div class="item item3">Box 3</div>
+        <div class="item item4">Box 4</div>
+    </div>
+</body>
+</html>

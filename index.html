@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Layout Techniques Demo</title>
+    <style>
+      body { font-family: sans-serif; margin: 40px; }
+      nav {
+        margin-bottom: 32px;
+        background: #ececec;
+        padding: 10px 16px;
+        border-radius: 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #2b2b2b;
+        margin-right: 20px;
+        font-weight: 500;
+        padding: 6px 14px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+      nav a.active,
+      nav a:hover {
+        background: #3949ab;
+        color: #fff;
+      }
+      h1 { margin-bottom: 24px; }
+      .intro {
+        background: #f3f8ff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 28px;
+        max-width: 700px;
+      }
+      ul {
+        line-height: 1.7;
+        margin-top: 10px;
+      }
+      .footer {
+        margin-top: 40px;
+        color: #999;
+        font-size: 0.96em;
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="float.html">Float</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="grid.html">Grid</a>
+    </nav>
+    <h1>CSS Layout Techniques Demo</h1>
+    <div class="intro">
+        <p>
+            This mini-site is a quick showcase of the three classic CSS layout techniques: <strong>Float</strong>, <strong>Flexbox</strong>, and <strong>Grid</strong>.
+        </p>
+        <ul>
+            <li>
+                <strong>Float</strong>: The old-school way! Useful for simple layouts but tricky for complex designs.
+            </li>
+            <li>
+                <strong>Flexbox</strong>: Modern, flexible layouts in one dimension (row or column). Great for navbars, cards, and more.
+            </li>
+            <li>
+                <strong>Grid</strong>: The newest, most powerful layout method. Perfect for two-dimensional layouts and full-page designs.
+            </li>
+        </ul>
+        <p>
+            Click on any layout in the navbar to see the <strong>exact same HTML</strong> styled three different ways.
+        </p>
+    </div>
+    <div class="footer">
+        &copy; 2025 CSS Layout Demo &middot; Made for learning and experimentation
+    </div>
+</body>
+</html>
